@@ -1,7 +1,7 @@
 import { GetCSSFn, ILayout, LayoutComponent } from "../types";
 import { authors } from "./authors";
 import { colourThemes, defaultTheme } from "./colours";
-import { AuthorImage, getTheme, Markdown, RLogo } from "./utils";
+import { getTheme, Markdown, Logo } from "./utils";
 
 const getCSS: GetCSSFn = config => {
   const theme = getTheme(config);
@@ -38,12 +38,11 @@ const Component: LayoutComponent = ({ config }) => {
         justifyContent: "space-between",
       }}
     >
-      <RLogo config={config} style={{ height: 150, width: 150 }} />
+      <Logo config={config} style={{ height: 150, width: 150 }} />
       <h1>
         <Markdown>{title}</Markdown>
       </h1>
 
-      <AuthorImage name={author} />
       <h2 style={{ display: "flex" }}>
         <Markdown style={{ fontWeight: 400 }}>Written by&nbsp;</Markdown>
         <Markdown>{author}</Markdown>
@@ -58,19 +57,20 @@ export const blogLayout: ILayout = {
     {
       name: "Theme",
       type: "select",
-      options: ["Light", "Dark"],
+      options: ["Light"],
       default: defaultTheme,
     },
     {
       name: "Title",
       type: "text",
-      default: "Self-hosted website analytics",
-      placeholder: "Big text",
+      default: "Hey! I'm using BugBlogs & I'm loving it!",
+      placeholder: "What's your blog's title?",
     },
     {
       name: "Author",
-      type: "select",
-      options: authors.map(author => author.name),
+      type: "text",
+      default: "Keshav Malik",
+      placeholder: "Who's the author?",
     },
   ],
   getCSS,

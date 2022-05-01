@@ -46,7 +46,7 @@ export const Select = React.forwardRef<HTMLSelectElement, Props>(
             error
               ? tw`border-red-500 hover:border-red-500`
               : tw`border-gray-200`,
-            tw`focus:outline-none focus:border-transparent focus-visible:ring-2 focus-visible:ring-accent`,
+            tw`focus:outline-none focus:border-transparent focus-visible:ring-2 focus-visible:ring-white`,
           ]}
           {...rest}
           onChange={e => {
@@ -56,12 +56,7 @@ export const Select = React.forwardRef<HTMLSelectElement, Props>(
           }}
         >
           {options.map(opt => (
-            <option
-              key={opt.value}
-              value={opt.value}
-              disabled={opt.disabled}
-              tw="text-fg"
-            >
+            <option key={opt.value} value={opt.value} disabled={opt.disabled}>
               {opt.text ?? opt.value}
             </option>
           ))}

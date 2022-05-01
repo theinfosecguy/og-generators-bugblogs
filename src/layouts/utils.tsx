@@ -48,35 +48,21 @@ export const Markdown: React.FC<{
   />
 );
 
-export const RLogo: React.FC<{
+export const Logo: React.FC<{
   config: ILayoutConfig;
   style?: React.CSSProperties;
 }> = ({ config, style }) => {
   const theme = gString(config, "Theme", defaultTheme).toLowerCase();
-  const rlogo =
+  const logo =
     theme === "dark"
-      ? "https://railway.app/brand/logo-light.svg"
-      : "https://railway.app/brand/logo-dark.svg";
+      ? "https://ucarecdn.com/63632a16-a014-410f-933a-203cf63d86cb/"
+      : "https://ucarecdn.com/cdc7a226-83a7-434d-95b6-66c93d276c24/";
 
   return (
     <img
-      src={rlogo}
-      className="rlogo"
+      src={logo}
+      className="Bug Blogs Logo"
       style={{ width: 200, height: 200, ...style }}
-    />
-  );
-};
-
-export const AuthorImage: React.FC<{
-  name: string;
-  style?: React.CSSProperties;
-}> = ({ name, style }) => {
-  const author = getAuthor(name);
-  return (
-    <img
-      src={author.image}
-      alt={author.name}
-      style={{ borderRadius: "100%", width: 100, height: 100, ...style }}
     />
   );
 };

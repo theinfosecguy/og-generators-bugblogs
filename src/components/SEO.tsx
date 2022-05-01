@@ -9,13 +9,12 @@ export interface Props extends NextSeoProps {
   image?: string;
 }
 
-const title = "Railway OG Image Generator";
+const title = "BugBlogs OG Image Generator";
 export const url = "";
-const description = "Service that generates dynamic OG images for railway.app";
+const description = "Service that generates dynamic OG images for BugBlogs";
 
 // Generate OG image for itself
-const image =
-  "https://og.railway.app/api/image?fileType=png&layoutName=Railway&Theme=Dark&Title=Open+Graph%5CnImage+Generator&Sub+Title=og.railway.app";
+const image = "";
 
 const config: DefaultSeoProps = {
   title,
@@ -27,7 +26,6 @@ const config: DefaultSeoProps = {
     images: [{ url: image }],
   },
   twitter: {
-    handle: "@Railway_App",
     cardType: "summary_large_image",
   },
 };
@@ -53,7 +51,6 @@ export const SEO: React.FC<Props> = ({ image, ...props }) => {
 
       <Head>
         <title>{title}</title>
-
         <meta name="description" content={description} />
       </Head>
     </>

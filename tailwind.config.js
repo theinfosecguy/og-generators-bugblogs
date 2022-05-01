@@ -2,9 +2,10 @@ const colors = require("tailwindcss/colors");
 
 const customColors = {
   transparent: "transparent",
-  bg: "#f8f9fa",
-  fg: "#212529",
+  bg: "#232323",
+  fg: "#fff",
   accent: "#C049FF",
+  dark: "#131415",
 };
 
 module.exports = {

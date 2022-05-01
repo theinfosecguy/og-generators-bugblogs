@@ -1,22 +1,10 @@
 import { ILayout, ILayoutConfig } from "../types";
-import { docsLayout } from "./docsLayout";
-import { patternLayout } from "./patternLayout";
-import { railwayLayout } from "./railwayLayout";
-import { simpleLayout } from "./simpleLayout";
-import { starterLayout } from "./starterLayout";
 import { blogLayout } from "./blogLayout";
 
 /**
  * All layouts that are available in the UI
  */
-export const layouts: ILayout[] = [
-  simpleLayout,
-  starterLayout,
-  railwayLayout,
-  blogLayout,
-  docsLayout,
-  patternLayout,
-];
+export const layouts: ILayout[] = [blogLayout];
 
 export const getDefaultLayout = (layout: ILayout): ILayoutConfig => {
   const config: ILayoutConfig = {};
