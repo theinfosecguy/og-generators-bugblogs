@@ -6,16 +6,16 @@ ARG NEXT_PUBLIC_SITE_URL
 # Create app directory
 WORKDIR /usr/src/app
 
-COPY package.json yarn.lock ./
+COPY package.json ./
 
 # Install deps
-RUN yarn
+RUN npm install
 
 # Bundle app source
 COPY . .
 
 # Build
-RUN yarn build
+RUN npm run build
 
 # Start
-CMD [ "yarn", "start" ]
+CMD [ "npm", "start" ]
