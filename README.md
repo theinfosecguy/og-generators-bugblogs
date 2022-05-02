@@ -1,10 +1,10 @@
-# BugBlogs OG Image Generator
+# BugBlogs OG Image Generator ⚡
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fog-generator)
+[![Sample Image](https://og.bugblogs.tech/api/image?fileType=png&layoutName=Blog&Theme=Dark&Title=Hey%21+I%27m+using+BugBlogs+%26+I%27m+loving+it%21&Author=Keshav+Malik)](https://bugblogs.tech)
 
 Service that dynamically generates [Open Graph](https://ogp.me/) images for [BugBlogs](https://bugblogs.tech).
 
-# How It Works?
+## How It Works? ⁉️
 
 Images are generated through the `/api/image` route. When you hit this route the following happens
 
@@ -15,21 +15,21 @@ Images are generated through the `/api/image` route. When you hit this route the
 - HTML page built, rendered with Puppeteer, and screenshot
 - Screenshot returned with a long cache max age
 
-# 🚀 How to setup?
+## How to setup? 🚀
 
 The frontend is a [NextJS](https://nextjs.org) site and the image generation happens in an API route.
 
 ```
 # Start local development server
-yarn dev
+npm run dev
 
 # Build for production
-yarn build
+npm run build
 
 # Start in production
-yarn start
+npm start
 ```
 
-# 🙌 Acknowledgement
+## 🙌 Acknowledgement
 
-Credit where credit is due. This started as a forked repo from [Railway's OG image generator](https://github.com/vercel/og-image). It is modified to suit the needs of BugBlogs.
+Credit where credit is due. This started as a forked repo from [Railway's OG image generator](https://github.com/vercel/og-image). It is modified to suit the needs of [BugBlogs](https://bugblogs.tech).
