@@ -1,6 +1,6 @@
 # BugBlogs OG Image Generator
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fog-generator)
+[![Sample Image](https://og.bugblogs.tech/api/image?fileType=png&layoutName=Blog&Theme=Dark&Title=Hey%21+I%27m+using+BugBlogs+%26+I%27m+loving+it%21&Author=Keshav+Malik)](https://bugblogs.tech)
 
 Service that dynamically generates [Open Graph](https://ogp.me/) images for [BugBlogs](https://bugblogs.tech).
 
