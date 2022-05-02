@@ -31,8 +31,8 @@ const Home: NextPage = () => {
           <Viewer />
         </section>
       )}{" "}
-      <footer tw="text-center mt-12">
-        <p tw="text-sm text-gray-300">
+      <footer tw="text-center mt-12 flex flex-col items-center">
+        <p tw="text-sm text-gray-300 text-center">
           Build on top of{" "}
           <Link href="https://github.com/railwayapp/og-generator">
             Railway OG Generator
@@ -42,6 +42,15 @@ const Home: NextPage = () => {
             <Link href="https://github.com/theinfosecguy">@theinfosecguy</Link>
           </strong>
         </p>
+        <a href=" https://vercel.com/?utm_source=not-so-great-team&utm_campaign=oss">
+          <img
+            src="https://ucarecdn.com/df49f525-7c66-4000-b9fa-f79d936aa697/"
+            alt="Powered by Vercel"
+            width="180"
+            height="30"
+            tw="mt-4"
+          />
+        </a>
       </footer>
     </main>
   );
